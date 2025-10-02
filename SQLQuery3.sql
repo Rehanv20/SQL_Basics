@@ -10,6 +10,9 @@ USE MyDatabase
 SELECT * FROM customers
 
 -- 1. INSERT 
+/* Syntax : 
+	INSERT INTO table_name (col1, col2, col3,...)
+	VALUES (value1, value2, value3, ...)*/
 INSERT INTO customers (id, first_name, country, score)
 VALUES
 	(6, 'Ana', 'USA', NULL),
@@ -38,4 +41,5 @@ first_name,
 NULL,
 'Unknown'
 FROM customers
+
 
