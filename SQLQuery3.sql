@@ -34,6 +34,7 @@ CREATE TABLE persons(
 	CONSTRAINT pk_persons PRIMARY KEY(id)
 );
 
+-- Insert data from customers to persons
 INSERT INTO persons (id, person_name, birth_date, phone)
 SELECT 
 id,
@@ -41,5 +42,6 @@ first_name,
 NULL,
 'Unknown'
 FROM customers
+
 
 
